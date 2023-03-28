@@ -1,0 +1,254 @@
+
+* {
+    margin: 0;
+}
+
+
+/* начало tabs */
+.tabs {
+    font-family: "Open Sans";
+    width: 1170px;
+    margin: auto;
+    padding: 50px 15px 0px;
+}
+
+.tabs .header {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.tabs .header span {
+    box-sizing: border-box;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    width: 183px;
+    padding: 10px;
+}
+
+.tabs .header .tab_1 {
+    cursor: pointer;
+    border: 1px solid #C6CBCD;
+    border-bottom: 1px solid white;
+    border-radius: 5px 5px 0 0;
+    width: 201px;
+}
+
+.tabs .header .tab_2, .tab_3 {
+    cursor: pointer;
+    border-bottom: 1px solid #C6CBCD;
+}
+
+.tabs .header .tab_4 {
+    width: 603px;
+    border-bottom: 1px solid #C6CBCD;
+}
+
+.tabs .content {
+    display: flex;
+    border: 1px solid #C6CBCD;
+    border-top: none;
+}
+
+.tabs .text_1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+.tabs h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.tabs h5 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.tabs .button_1 {
+    background-color: #EC7979;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    width: 270px;
+    height: 58px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.tabs #right {
+    margin-left: 30px;
+}
+/* конец tabs */
+
+
+
+
+
+/* начало about */
+.about {
+    font-family: "Raleway";
+    font-style: normal;
+    text-align: center;
+    width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+.about header div{
+    border: 1px solid #EC7979;
+    width: 170px;
+    margin: auto;
+}
+
+.about header h5 {
+    color: #86878B;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 71px;
+}
+
+.about section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.about div[class^="box"] {
+    padding: 0;
+    max-width: 370px;
+}
+
+.about h2 {
+    font-size: 36px;
+    font-weight: 400;
+    padding: 50px 0;
+}
+
+.about h4 {
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+.about h5 {
+    font-size: 18px;
+    font-weight: 400;
+}
+/* Конец about */
+
+
+
+
+
+
+/* Начало price */
+.price {
+    background: #F5F5F5;
+    padding:  50px 0 ;
+}
+
+.container {
+    font-family: "Raleway";
+    font-style: normal;
+    text-align: center;
+    width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.price header div{
+    border: 1px solid #EC7979;
+    width: 170px;
+    margin: auto;
+}
+
+.price header h5 {
+    color: #86878B;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.price h2 {
+    font-size: 36px;
+    font-weight: 400;
+    padding: 50px 0;
+}
+
+.price section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 535px;
+}
+
+.price div[class^="box"] {
+    background: #FFFFFF;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 370px;
+    height: 510px;
+}
+
+.price .box_2_shadow {
+    align-self: flex-start;
+    filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+    margin: 0;
+}
+
+.price h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #86878B;
+    border-top: 2px solid #F5F5F5;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.price section .back_black {
+    background: #333333;
+}
+
+.price h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 700;
+    height: 60px;
+    background: #333333;
+    color: #FFFFFF;
+    
+}
+
+.price h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 700;
+    height: 98px;
+    background: #333333;
+    color: #FFFFFF;
+    border-top: 2px solid #F5F5F5;
+}
+/* конец price */
+
