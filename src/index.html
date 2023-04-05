@@ -17,11 +17,11 @@
                     <img src="images/bunner_1/logo_ax (1).png" alt="blablabla">
                 </div>
                 <nav>
-                    <div class="text_nav">Features</div>
-                    <div class="text_nav">About</div>
-                    <div class="text_nav">Pricing</div>
-                    <div class="text_nav">Reviews</div>
-                    <div class="text_nav">Contact</div>
+                    <a href="#tabs" >Features</a>
+                    <a href="#about" >About</a>
+                    <a href="#price" >Pricing</a>
+                    <a href="#reviews" >Reviews</a>
+                    <a href="#contact" >Contact</a>
                 </nav>
             </div>
             <div class="container">
@@ -35,22 +35,21 @@
                     <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                     <button class="button" type="button">Download</button>
                 </section>
-                <section class="box_2">
-                    <h4>TRY YOUR <span class="bold_text">FREE</span> TRIAL TODAY</h4>
-                    <div class="input">
+
+                <form action="#" method="get">
+                    <fieldset class="fieldset">
+                        <h4>TRY YOUR <span class="bold_text">FREE</span> TRIAL TODAY</h4>
                         <input type="text" placeholder="Name">
                         <input type="text" placeholder="Email">
                         <input type="password" placeholder="Password">
-                    </div>
-                    <button class="button_5" type="button">Get Started</button>
-                </section>
+                        <button class="button_5" type="button">Get Started</button>
+                    </fieldset>
+                </form>
             </div>
         </section>
     </header>
+
     <main>
-
-        
-
         <section class="social">
             <div class="container">
                 <h4>Social Media</h4>
@@ -68,7 +67,7 @@
             </section>
         </section>
 
-        <section class="tabs">
+        <section id="tabs" class="tabs">
             <header class="header">
                 <span class="tab_1">TAB 1</span>
                 <span class="tab_2">TAB 2</span>
@@ -96,7 +95,7 @@
             </content>
         </section>
     
-        <div class="about">
+        <div id="about" class="about">
             <header>
                 <h2>WHY THIS IS AWESOME</h2>
                 <div></div>
@@ -104,31 +103,30 @@
             </header>
             <section>
                 <article class="box_1">
-                    <img src="images/bulb.png" alt="bee">
+                    <img src="images/about/bulb.png" alt="bee">
                     <h4>Thoughtful Design</h4>
                     <h5>Lorem ipsum dolor sit amet, consectetur adipiscing <br>
                         elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus <br>accumsan et viverra.
                     </h5>
                 </article>
                 <article class="box_2">
-                    <img src="images/keyboard.png" alt="bee">
+                    <img src="images/about/keyboard.png" alt="bee">
                     <h4>Thoughtful Design</h4>
                     <h5>Lorem ipsum dolor sit amet, consectetur adipiscing <br>
                         elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus <br>accumsan et viverra.
                     </h5>
                 </article>
                 <article class="box_3">
-                    <img src="images/lightning.png" alt="bee">
+                    <img src="images/about/lightning.png" alt="bee">
                     <h4>Thoughtful Design</h4>
                     <h5>Lorem ipsum dolor sit amet, consectetur adipiscing <br>
                         elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus <br>accumsan et viverra.
                     </h5>
                 </article>
             </section>
-            
         </div>
     
-        <div class="price">
+        <div id="price" class="price">
             <div class="container">
                 <header>
                     <h2>PRICING OPTIONS</h2>
@@ -147,8 +145,7 @@
                         <span><h5>1 Gb Of Space</h5></span>
                         <span><h5>1 Gb Of Space</h5></span>
                     </article>
-
-                     <article class="box_2_shadow">
+                    <article class="box_2_shadow">
                         <span><h4>Optima</h4></span>
                         <span><h3>$20</h3></span>
                         <span class="back_black"><h5>Free for life</h5></span>
@@ -159,7 +156,6 @@
                         <span><h5>1 Gb Of Space</h5></span>
                         <span><h5>1 Gb Of Space</h5></span>
                     </article>
-
                     <article class="box_3">
                         <span><h4>Pro</h4></span>
                         <span><h3>$30</h3></span>
@@ -171,13 +167,11 @@
                         <span><h5>1 Gb Of Space</h5></span>
                         <span><h5>1 Gb Of Space</h5></span>
                     </article>
-
                 </section>
-             </div>
-            
+            </div>
         </div>
     
-        <div class="reviews">
+        <div id="reviews" class="reviews">
             <header>
                 <h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
                 <div></div>
@@ -192,11 +186,9 @@
                         quo suscipit.
                     </h5>
                     <div class="delta"></div>
-    
                     <img src="images/reviews/Ellipse_avatar_1.png" alt="blablabla">
                     <h4 class="text_2">Davis Rhiel Madsen</h4>
                     <h5 class="text_3">Manager</h5>
-                    
                 </article>
                 <article>
                     <h5 class="text_1">Lorem ipsum dolor sit amet, 
@@ -206,11 +198,9 @@
                         quo suscipit.
                     </h5>
                     <div class="delta"></div>
-    
                     <img src="images/reviews/Ellipse_avatar_2.png" alt="blablabla">
                     <h4 class="text_2">Jaydon Rosser</h4>
                     <h5 class="text_3">Manager</h5>
-                    
                 </article>
                 <article>
                     <h5 class="text_1">Lorem ipsum dolor sit amet, 
@@ -220,14 +210,11 @@
                         quo suscipit.
                     </h5>
                     <div class="delta"></div>
-                    
                     <img src="images/reviews/Ellipse_avatar_3.png" alt="blablabla">
                     <h4 class="text_2">Cooper Dorwart</h4>
                     <h5 class="text_3">Manager</h5> 
-                    
                 </article>
             </section>
-    
         </div>
     
         <div class="bunner_2" style="background-image: url(images/Bunner_2/bg_bunner_2.png);" >
@@ -243,7 +230,7 @@
             </div>
         </div>
     
-        <div class="contact">
+        <div id="contact" class="contact">
             <header>
                 <h2>CONTACT US</h2>
                 <div></div>
@@ -258,8 +245,7 @@
                 </article>
     
                 <article>
-                    <div class="block_right">message</div>
-                    <!-- <input type="text" placeholder="message" class="rr_2"> -->
+                    <textarea name="text_message" id="block_right" placeholder="Message"></textarea>
                 </article>
                 
             </section>
