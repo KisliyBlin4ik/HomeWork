@@ -3,6 +3,19 @@
     margin: 0;
 }
 
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h2 {
     font-size: 36px;
     font-weight: 400;
@@ -26,11 +39,11 @@ h5 {
     background: #000000;
     position: absolute;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     box-sizing: border-box;
     padding: 0px 170px 0 115px;
-    height: 75px;
-    width: 1510px;
+    width: 100%;
 }
 
 .bunner_1 nav {
@@ -51,12 +64,14 @@ h5 {
 
 
 .bunner_1 {
-    width: 1510px;
+    width: 100%;
     height: 1026px;
     display: flex;
     justify-content: center;
     margin: 0 auto;
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: 1;
 }
 
@@ -74,10 +89,11 @@ h5 {
 
 .bunner_1 .container {
     display: flex;
-    width: 1170px;
-    justify-content: space-between;
-    padding-top: 280px;
-    padding-bottom: 185px;
+    max-width: 1170px;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 280px;
+    margin-bottom: 185px;
 }
 
 .bunner_1 a {
@@ -91,10 +107,13 @@ h5 {
     flex-direction: column;
     justify-content: space-between;
     width: 670px;
+    height: 561px;
 }
 
 .bunner_1 .logo {
+    display: flex;
     padding: 23px 0;
+    flex-wrap: nowrap;
 }
 
 .bunner_1 .line {
@@ -108,7 +127,8 @@ h5 {
     color: white;
     font-weight: 600;
     font-size: 18px;
-    width: 270px;
+    max-width: 270px;
+    width: 100%;
     height: 58px;
     cursor: pointer;
     padding: 0; 
@@ -129,12 +149,18 @@ h5 {
 
 
 /* form */
+#form_bunner {
+    display: flex;
+    width: 470px;
+    flex-wrap: wrap;
+}
+
 .bunner_1 .fieldset {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 470px;
+    width: 100%;
     height: 450px;
     background: #FFFFFF;
     border: none;
@@ -146,15 +172,25 @@ h5 {
     color: #EC7979;
 }
 
+.input_bunner1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 185px;
+}
+
 .bunner_1 input {
     border: none;
     border-bottom: 1px solid #BDBDBD;
-    width: 370px;
+    width: 80%;
     height: 38px;
     padding-bottom: 5px;
     font-family: "Open Sans";
     color: #BDBDBD;
     font-size: 14px;
+    
 }
 
 .button_5 {
@@ -164,7 +200,7 @@ h5 {
     color: white;
     font-weight: 600;
     font-size: 15px;
-    width: 470px;
+    width: 100%;
     height: 58px;
     cursor: pointer;
     padding: 0;
@@ -210,10 +246,12 @@ h5 {
 /* начало social */
 .social {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
     background: #F8EFEF;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .social .container {
@@ -225,6 +263,7 @@ h5 {
 
 .social .img {
     display: flex;
+    flex-wrap: wrap;
     width: 670px;
     justify-content: space-between;
     align-items: center;
@@ -269,9 +308,11 @@ h5 {
 /* начало tabs */
 
 .tabs {
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
     font-family: "Open Sans";
-    width: 1170px;
+    max-width: 1170px;
+    width: 100%;
     margin: auto;
     padding: 100px 15px 0px;
 }
@@ -288,7 +329,8 @@ h5 {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    width: 183px;
+    max-width: 183px;
+    width: 100%;
     padding: 10px;
 }
 
@@ -297,7 +339,8 @@ h5 {
     border: 1px solid #C6CBCD;
     border-bottom: 1px solid white;
     border-radius: 5px 5px 0 0;
-    width: 201px;
+    max-width: 201px;
+    width: 100%;
 }
 
 .tabs .header .tab_2, .tab_3 {
@@ -306,7 +349,8 @@ h5 {
 }
 
 .tabs .header .tab_4 {
-    width: 603px;
+    max-width: 603px;
+    width: 100%;
     border-bottom: 1px solid #C6CBCD;
 }
 
@@ -324,7 +368,6 @@ h5 {
     flex-direction: column;
     margin-left: 100px;
     margin-bottom: 20px;
-    /* flex: 1; */
 }
 
 .tabs h3 {
@@ -344,7 +387,8 @@ h5 {
     color: white;
     font-weight: 600;
     font-size: 18px;
-    width: 270px;
+    max-width: 270px;
+    width: 100%;
     height: 58px;
     cursor: pointer;
     padding: 0;
@@ -362,7 +406,8 @@ h5 {
 
 .tabs #right {
     margin-left: 30px;
-    /* order: 1; */
+    width: 470px;
+    height: 500px;
 }
 /* конец tabs */
 
@@ -378,14 +423,26 @@ h5 {
 
 /* начало about */
 .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: "Raleway";
     font-style: normal;
     text-align: center;
-    width: 1170px;
-    margin: auto;
+    max-width: 1170px;
+    width: 100%;
     padding: 0 15px;
     margin-top: 55px;
     margin-bottom: 55px;
+}
+
+.about header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
 }
 
 .about header div{
@@ -402,14 +459,24 @@ h5 {
 }
 
 .about section {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
 }
 
 .about [class^="box"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 0;
     max-width: 370px;
+}
+
+.about img {
+    width: 170px;
+    height: 170px;
 }
 
 .about h4 {
@@ -433,14 +500,18 @@ h5 {
 .price {
     background: #F5F5F5;
     padding:  50px 0 ;
+    width: 100%;
 }
 
 .price .container {
     font-family: "Raleway";
+    display: flex;
+    flex-direction: column;
     font-style: normal;
     text-align: center;
-    width: 1170px;
-    margin: auto;
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
     padding: 0 15px;
 }
 
@@ -454,14 +525,14 @@ h5 {
     color: #86878B;
     padding: 0;
     margin-top: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 .price section {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    height: 535px;
+    flex-wrap: wrap;
 }
 
 .price [class^="box"] {
@@ -527,10 +598,13 @@ h5 {
 
 /* начало reviews */
 .reviews {
+    display: flex;
+    flex-direction: column;
     font-family: "Raleway";
     font-style: normal;
     text-align: center;
-    width: 1170px;
+    max-width: 1170px;
+    width: 100%;
     margin: auto;
     padding: 0 15px;
     margin-top: 55px;
@@ -552,6 +626,7 @@ h5 {
 
 .reviews section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -624,13 +699,14 @@ h5 {
 
 /* начало bunner_2 */
 .bunner_2 {
-    width: 1510px;
+    width: 100%;
     display: flex;
     justify-content: center;
     margin:  0 auto;
     background-repeat: no-repeat;
     position: relative;
     z-index: 1;
+    background-size: cover;
 }
 
 .bunner_2:before {
@@ -676,7 +752,8 @@ h5 {
     color: white;
     font-weight: 600;
     font-size: 18px;
-    width: 370px;
+    max-width: 370px;
+    width: 100%;
     height: 58px;
     cursor: pointer;
     padding: 0; 
@@ -710,8 +787,8 @@ h5 {
     font-family: "Raleway";
     font-style: normal;
     text-align: center;
-    width: 1170px;
-    height: 622px;
+    max-width: 1170px;
+    width: 100%;
     margin: auto;
     padding: 0 15px;
     margin-top: 55px;
@@ -732,18 +809,21 @@ h5 {
 }
 
 .contact section {
+    width: 100%;
+    flex-wrap: wrap;
     display: flex;
+    justify-content: space-between;
 }
 
 .contact article {
-    display: flex;
-    flex-wrap: wrap;
+    width: 50%;
 }
 
 .contact .block_left {
     display: flex;
     box-sizing: border-box;
-    width: 571px;
+    max-width: 571px;
+    width: 100%;
     border: none;
     padding: 15px 0px;
     font-family: "Open Sans";
@@ -763,7 +843,8 @@ h5 {
     margin-top: 35px;
     display: flex;
     box-sizing: border-box;
-    width: 569px;
+    max-width: 569px;
+    width: 100%;
     border: none;
     padding: 15px 0px;
     font-family: "Open Sans";
@@ -777,11 +858,11 @@ h5 {
     background-color: #EC7979;
     border: none;
     font-family: "Open Sans";
-    /* font-style: italic; */
     color: white;
     font-weight: 600;
     font-size: 18px;
-    width: 370px;
+    max-width: 370px;
+    width: 100%;
     height: 58px;
     cursor: pointer;
     padding: 0;
@@ -808,12 +889,15 @@ h5 {
 footer {
     background-color: #000000;
     text-align: center;
+    width: 100%;
 }
 
 footer section {
     display: flex;
-    justify-content: space-between;
-    padding: 35px 470px 28px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    
 }
 
 footer h5 {
@@ -825,6 +909,7 @@ footer h5 {
 footer img {
    width: 53px;
    height: 53px;
+   padding: 35px 30px 28px;
 }
 
 footer img:hover {
