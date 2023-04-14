@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figma</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Open+Sans|Poppins">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <div class="wrapper">
         <header class="header_bunner">
-            <section class="bunner_1" style="background-image: url(images/bunner_1/bunner1.svg);">
+            <section class="bunner_1">
                 <div class="header">
-                    <div class="logo">
-                        <img src="images/bunner_1/logo_ax (2).png" alt="blablabla">
-                        <img src="images/bunner_1/logo_ax (1).png" alt="blablabla">
+                    <div class="logo_2">
+                        <img src="images/bunner_1/logo_ax_2.png" alt="blablabla">
+                        <img src="images/bunner_1/logo_ax_1.png" alt="blablabla">
                     </div>
                     <nav>
                         <a href="#tabs" >Features</a>
@@ -25,27 +27,26 @@
                         <a href="#contact" >Contact</a>
                     </nav>
                 </div>
+
                 <div class="container">
                     <section class="box_1">
-                        <div class="logo">
+                        <div class="logo_1">
                             <img src="images/bunner_1/logo_AX.png" alt="blablabla">
                             <img src="images/bunner_1/logo_IT.png" alt="blablabla">
                         </div>
                         <h1>MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
-                        <div class="line"></div>
+                        <div class="line"></div><!--полоса под заголовом-->
                         <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                         <button class="button" type="button">Download</button>
                     </section>
-    
                     <form action="#" method="get" id="form_bunner">
                         <fieldset class="fieldset">
-                            <h4>TRY YOUR <span class="bold_text">FREE</span> TRIAL TODAY</h4>
+                            <h4 class="heading_for_form_bunner">TRY YOUR <span class="bold_text">FREE</span> TRIAL TODAY</h4>
                             <div class="input_bunner1">
                             <input type="text" placeholder="Name">
                             <input type="text" placeholder="Email">
                             <input type="password" placeholder="Password">
                             </div>
-                            
                             <button class="button_5" type="button">Get Started</button>
                         </fieldset>
                     </form>
@@ -53,14 +54,15 @@
             </section>
         </header>
     
+
+
         <main>
             <section class="social">
                 <div class="container">
                     <h4>Social Media</h4>
                     <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</h5>
                 </div>
-                
-                <section class="img">
+                <div class="social_icons">
                     <img src="images/footer/facebook_icon.png" alt="blablabla">
                     <img src="images/footer/twitter_icon.png" alt="blablabla">
                     <img src="images/footer/linkedin_icon.png" alt="blablabla">
@@ -68,198 +70,224 @@
                     <img src="images/footer/instagram_icon.png" alt="blablabla">
                     <img src="images/footer/github_icon.png" alt="blablabla">
                     <img src="images/footer/rss_icon.png" alt="blablabla">
-                </section>
+                </div>
             </section>
     
-            <section id="tabs" class="tabs">
+
+
+            <div id="tabs" class="tabs">
                 <header class="header">
                     <span class="tab_1">TAB 1</span>
                     <span class="tab_2">TAB 2</span>
                     <span class="tab_3">TAB 3</span>
                     <span class="tab_4"><br></span>
                 </header>
-        
-                <content class="content">
+                <div class="content">
                     <article class="text_1">
                         <h3>Tabs with soft transitioning effect.</h3>
-                        <h5><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod<br> 
+                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod<br> 
                         bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra<br> 
                         justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
-                        penatibus et magnis dis parturient montes.<br>
-                            
+                        penatibus et magnis dis parturient montes.<br>  
                         <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod<br> 
                         bibendum laoreet.</h5>
-                        
                         <button class="button_1" type="button">Download</button>
-        
                     </article>
-                    
-                    <img src="images/Tabs/statue.png" id="right" alt="bee">
-                    
-                </content>
-            </section>
+                    <img src="images/tabs/statue.png" id="right" alt="bee">
+                </div>
+            </div>
         
+
+
             <div id="about" class="about">
                 <header>
                     <h2>WHY THIS IS AWESOME</h2>
-                    <div></div>
+                    <div class="line_under_heading"></div><!--полоса под заголовом-->
                     <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
                 </header>
-                <section>
-                    <article class="box_1">
+                <div class="about_container_box">
+                    <article class="box">
                         <img src="images/about/bulb.png" alt="bee">
                         <h4>Thoughtful Design</h4>
                         <h5>Lorem ipsum dolor sit amet, consectetur adipiscing <br>
                             elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus <br>accumsan et viverra.
                         </h5>
                     </article>
-                    <article class="box_2">
+                    <article class="box">
                         <img src="images/about/keyboard.png" alt="bee">
                         <h4>Thoughtful Design</h4>
                         <h5>Lorem ipsum dolor sit amet, consectetur adipiscing <br>
                             elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus <br>accumsan et viverra.
                         </h5>
                     </article>
-                    <article class="box_3">
+                    <article class="box">
                         <img src="images/about/lightning.png" alt="bee">
                         <h4>Thoughtful Design</h4>
                         <h5>Lorem ipsum dolor sit amet, consectetur adipiscing <br>
                             elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus <br>accumsan et viverra.
                         </h5>
                     </article>
-                </section>
+                </div>
             </div>
         
+
+
             <div id="price" class="price">
                 <div class="container">
                     <header>
                         <h2>PRICING OPTIONS</h2>
-                        <div></div>
+                        <div class="line_under_heading"></div><!--полоса под заголовом-->
                         <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
                     </header>
-                    <section>
-                        <article class="box_1">
-                            <span><h4>Basic</h4></span>
-                            <span><h3>$10</h3></span>
-                            <span class="back_black"><h5>Free for life</h5></span>
-                            <span><h5>1 Gb Of Space</h5></span>
-                            <span><h5>1 Gb Of Space</h5></span>
-                            <span><h5>1 Gb Of Space</h5></span>
-                            <span><h5>1 Gb Of Space</h5></span>
-                            <span><h5>1 Gb Of Space</h5></span>
-                            <span><h5>1 Gb Of Space</h5></span>
+                    <div class="container_box">
+                        <article class="box">
+                            <h4>Basic</h4>
+                            <h3>$10</h3>
+                            <h5 class="back_black">Free for life</h5>
+                            <h5>1 Gb Of Space</h5>
+                            <h5>1 Gb Of Space</h5>
+                            <h5>1 Gb Of Space</h5>
+                            <h5>1 Gb Of Space</h5>
+                            <h5>1 Gb Of Space</h5>
+                            <h5>1 Gb Of Space</h5>
                         </article>
-                        <article class="box_2_shadow">
-                            <span><h4>Optima</h4></span>
-                            <span><h3>$20</h3></span>
-                            <span class="back_black"><h5>Free for life</h5></span>
-                            <span><h5>1 Gb Of Space</h5></span>
-                            <span><h5>1 Gb Of Space</h5></span>
-                            <span><h5>1 Gb Of Space</h5></span>
-                            <span><h5>1 Gb Of Space</h5></span>
-                            <span><h5>1 Gb Of Space</h5></span>
-                            <span><h5>1 Gb Of Space</h5></span>
+                        <article class="box">
+                            <h4>Optima</h4>
+                            <h3>$20</h3>
+                            <h5 class="back_black">Free for life</h5>
+                            <h5>1 Gb Of Space</h5>
+                            <h5>1 Gb Of Space</h5>
+                            <h5>1 Gb Of Space</h5>
+                            <h5>1 Gb Of Space</h5>
+                            <h5>1 Gb Of Space</h5>
+                            <h5>1 Gb Of Space</h5>
                         </article>
-                        <article class="box_3">
-                            <span><h4>Pro</h4></span>
-                            <span><h3>$30</h3></span>
-                            <span class="back_black"><h5>Free for life</h5></span>
-                            <span><h5>1 Gb Of Space</h5></span>
-                            <span><h5>1 Gb Of Space</h5></span>
-                            <span><h5>1 Gb Of Space</h5></span>
-                            <span><h5>1 Gb Of Space</h5></span>
-                            <span><h5>1 Gb Of Space</h5></span>
-                            <span><h5>1 Gb Of Space</h5></span>
+                        <article class="box">
+                            <h4>Pro</h4>
+                            <h3>$30</h3>
+                            <h5 class="back_black">Free for life</h5>
+                            <h5>1 Gb Of Space</h5>
+                            <h5>1 Gb Of Space</h5>
+                            <h5>1 Gb Of Space</h5>
+                            <h5>1 Gb Of Space</h5>
+                            <h5>1 Gb Of Space</h5>
+                            <h5>1 Gb Of Space</h5>
                         </article>
-                    </section>
+                    </div>
                 </div>
             </div>
         
+
+
             <div id="reviews" class="reviews">
                 <header>
                     <h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
-                    <div></div>
+                    <div class="line_under_heading"></div><!--полоса под заголовом-->
                     <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
                 </header>
-                <section>
-                    <article>
-                        <h5 class="text_1">Lorem ipsum dolor sit amet, 
-                            consectetur adipisicing elit. Doloribus 
-                            accusamus expedita repellat similique 
-                            odio aspernatur ex, architecto eaque 
-                            quo suscipit.
-                        </h5>
-                        <div class="delta"></div>
-                        <img src="images/reviews/Ellipse_avatar_1.png" alt="blablabla">
-                        <h4 class="text_2">Davis Rhiel Madsen</h4>
-                        <h5 class="text_3">Manager</h5>
+                <div class="reviews_container_text">
+                    <article class="commend">
+                        <div class="commend_text_header">
+                            <h5 class="text_1"><!--треугольник под отзывом-->
+                                Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit. Doloribus 
+                                accusamus expedita repellat similique 
+                                odio aspernatur ex, architecto eaque 
+                                quo suscipit.
+                            </h5>
+                        </div>
+                        <div class="commend_text_main">
+                            <div class="user_avatar">
+                                <img src="images/reviews/Ellipse_avatar_1.png" alt="blablabla">
+                            </div>
+                            <div class="user_name_work">
+                                <h4 class="text_2">Davis Rhiel Madsen</h4>
+                                <h5 class="text_3">Manager</h5>
+                            </div>
+                        </div>
                     </article>
-                    <article>
-                        <h5 class="text_1">Lorem ipsum dolor sit amet, 
-                            consectetur adipisicing elit. Doloribus 
-                            accusamus expedita repellat similique 
-                            odio aspernatur ex, architecto eaque 
-                            quo suscipit.
-                        </h5>
-                        <div class="delta"></div>
-                        <img src="images/reviews/Ellipse_avatar_2.png" alt="blablabla">
-                        <h4 class="text_2">Jaydon Rosser</h4>
-                        <h5 class="text_3">Manager</h5>
+                    <article class="commend">
+                        <div class="commend_text_header">
+                            <h5 class="text_1"><!--треугольник под отзывом-->
+                                Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit. Doloribus 
+                                accusamus expedita repellat similique 
+                                odio aspernatur ex, architecto eaque 
+                                quo suscipit.
+                            </h5>
+                        </div>
+                        <div class="commend_text_main">
+                            <div class="user_avatar">
+                                <img src="images/reviews/Ellipse_avatar_2.png" alt="blablabla">
+                            </div>
+                            <div class="user_name_work">
+                                <h4 class="text_2">Jaydon Rosser</h4>
+                                <h5 class="text_3">Manager</h5>
+                            </div>
+                        </div>
                     </article>
-                    <article>
-                        <h5 class="text_1">Lorem ipsum dolor sit amet, 
-                            consectetur adipisicing elit. Doloribus 
-                            accusamus expedita repellat similique 
-                            odio aspernatur ex, architecto eaque 
-                            quo suscipit.
-                        </h5>
-                        <div class="delta"></div>
-                        <img src="images/reviews/Ellipse_avatar_3.png" alt="blablabla">
-                        <h4 class="text_2">Cooper Dorwart</h4>
-                        <h5 class="text_3">Manager</h5> 
+                    <article class="commend">
+                        <div class="commend_text_header">
+                            <h5 class="text_1"><!--треугольник под отзывом-->
+                                Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit. Doloribus 
+                                accusamus expedita repellat similique 
+                                odio aspernatur ex, architecto eaque 
+                                quo suscipit.
+                            </h5>
+                        </div>
+                        <div class="commend_text_main">
+                            <div class="user_avatar">
+                                <img src="images/reviews/Ellipse_avatar_3.png" alt="blablabla">
+                            </div>
+                            <div class="user_name_work">
+                                <h4 class="text_2">Cooper Dorwart</h4>
+                                <h5 class="text_3">Manager</h5> 
+                            </div>
+                        </div>
                     </article>
-                </section>
-            </div>
-        
-            <div class="bunner_2" style="background-image: url(images/Bunner_2/bg_bunner_2.png);" >
-                <div class="container" >
-                    <header>
-                        <h2>STYLISH AXURE DESIGN</h2>
-                        <div></div>
-                        <h5>Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!</h5>
-                    </header>
-    
-                    <button class="button_2" type="button">Download</button>
-    
                 </div>
             </div>
         
+
+
+            <div class="bunner_2">
+                <div class="container" >
+                    <header>
+                        <h2>STYLISH AXURE DESIGN</h2>
+                        <div></div><!--полоса под заголовом-->
+                        <h5>Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!</h5>
+                    </header>
+                    <button class="button_2" type="button">Download</button>
+                </div>
+            </div>
+        
+
+
             <div id="contact" class="contact">
                 <header>
                     <h2>CONTACT US</h2>
-                    <div></div>
+                    <div class="line_under_heading"></div><!--полоса под заголовом-->
                     <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
                 </header>
-                
-                <section>
-                    <article>
+                <div class="container_for_input">
+                    <div class="box">
                         <input type="text" placeholder="Name" class="block_left" >
                         <input type="text" placeholder="Email" class="block_left">
                         <input type="password" placeholder="Password" class="block_left">
-                    </article>
-        
-                    <article>
-                        <textarea name="text_message" id="block_right" placeholder="Message"></textarea>
-                    </article>
-                    
-                </section>
-                
+                    </div>
+                    <div class="box">
+                        <textarea name="text_message" class="block_right" placeholder="Message"></textarea>
+                    </div>
+                </div>
                 <button class="button_3" type="button">Send Message</button>
             </div>
         </main>
     
+
+
         <footer>
-            <section>
+            <div class="footer_icons">
                 <img src="images/footer/facebook_icon.png" alt="blablabla">
                 <img src="images/footer/twitter_icon.png" alt="blablabla">
                 <img src="images/footer/linkedin_icon.png" alt="blablabla">
@@ -267,7 +295,7 @@
                 <img src="images/footer/instagram_icon.png" alt="blablabla">
                 <img src="images/footer/github_icon.png" alt="blablabla">
                 <img src="images/footer/rss_icon.png" alt="blablabla">
-            </section>
+            </div>
             <article>
                 <h5>© 2015 Axure Themes</h5>
             </article>

@@ -16,22 +16,49 @@ main {
     align-items: center;
 }
 
+h1 {
+    font-size: 3rem; /*48px*/
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
 h2 {
-    font-size: 36px;
+    font-size: 2.25rem;/*36px*/
     font-weight: 400;
     padding: 50px 0;
 }
 
+h3 {
+    font-weight: 700;
+    font-size: 1.875rem; /*30px*/
+}
+
 h4 {
-    font-family: "Open Sans";
-    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;/*24px*/
     font-weight: 700;
 }
 
 h5 {
-    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.125rem;/*18px*/
     font-weight: 400;
 }
+
+.line_under_heading{/*полоса под заголовом*/
+    border: 1px solid #EC7979;
+    width: calc(15% - 5px);
+    margin: auto;
+}
+
+
+
+
+
+
+
+
 /* начало bunner_1 */
 
 /* nav */
@@ -46,6 +73,12 @@ h5 {
     width: 100%;
 }
 
+.bunner_1 .logo_2 {
+    display: flex;
+    padding: 23px 0;
+    flex-wrap: nowrap;
+}
+
 .bunner_1 nav {
     display: flex;
     width: 570px;
@@ -55,15 +88,16 @@ h5 {
 .bunner_1 a {
     text-decoration: none;
     color: white;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
-    padding: 30px ;
+    padding: 2.28em;
     color: #FFFFFF;
 }
 /* nav end */
 
 
 .bunner_1 {
+    background: url(../images/bunner_1/bg_bunner_1.png) no-repeat center center;
     width: 100%;
     height: 1026px;
     display: flex;
@@ -91,9 +125,8 @@ h5 {
     display: flex;
     max-width: 1170px;
     width: 100%;
-    justify-content: space-evenly;
-    margin-top: 280px;
-    margin-bottom: 185px;
+    justify-content: space-between;
+    padding: 280px 16px 185px;
 }
 
 .bunner_1 a {
@@ -101,7 +134,7 @@ h5 {
     color: white;
 }
 
-/* box_1*/
+/* начало - box_1 - левая часть */
 .bunner_1 .box_1 {
     display: flex;
     flex-direction: column;
@@ -110,21 +143,22 @@ h5 {
     height: 561px;
 }
 
-.bunner_1 .logo {
+.bunner_1 .logo_1 {
     display: flex;
     padding: 23px 0;
     flex-wrap: nowrap;
 }
 
-.bunner_1 .line {
+.bunner_1 .line {/*полоса под заголовом*/
     border: 1px solid #FFFFFF;
-    width: 170px;
+    width: calc(26% - 4px);
 }
 
 .bunner_1 .button {
     border: 2px solid #FFFFFF;
     background:rgba(51, 51, 51, 0);
     color: white;
+    font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-size: 18px;
     max-width: 270px;
@@ -145,13 +179,13 @@ h5 {
     border: none;
     color: white;
 }
-/* box_1 end */
+/* конец - box_1 - левая часть*/
 
-
-/* form */
+/* начало form - правая часть */
 #form_bunner {
     display: flex;
-    width: 470px;
+    max-width: 470px;
+    width: 100%;
     flex-wrap: wrap;
 }
 
@@ -165,7 +199,7 @@ h5 {
     background: #FFFFFF;
     border: none;
     border-radius: 10px 10px 10px 10px;
-    padding: 0;
+    padding: 33px 0 0;
 }
 
 .bunner_1 .bold_text {
@@ -187,16 +221,21 @@ h5 {
     width: 80%;
     height: 38px;
     padding-bottom: 5px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     color: #BDBDBD;
     font-size: 14px;
     
 }
 
+.bunner_1 input:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
 .button_5 {
     background-color: #EC7979;
     border: none;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     color: white;
     font-weight: 600;
     font-size: 15px;
@@ -215,22 +254,10 @@ h5 {
     background-color: #EC7979;
     box-shadow: 0px 0px 10px 0px #AB4949 inset;
 }
-/* form end */
-
-.bunner_1 h1 {
-    font-size: 48px;
-    font-family: "Raleway";
-    font-weight: 500;
-    color: #FFFFFF;
-}
-
-.bunner_1 h4 {
-    padding-top: 33px;
-}
+/* конец - form - правая часть */
 
 .bunner_1 h5 {
     width: 270px;
-    font-family: "Raleway";
     color: #FFFFFF;
 }
 /* конец bunner_1 */
@@ -246,7 +273,6 @@ h5 {
 /* начало social */
 .social {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
     background: #F8EFEF;
@@ -261,7 +287,7 @@ h5 {
     padding-right: 30px;
 }
 
-.social .img {
+.social .social_icons {
     display: flex;
     flex-wrap: wrap;
     width: 670px;
@@ -288,7 +314,6 @@ h5 {
 }
 
 .social h5 {
-    font-family: "Raleway";
     color: #86878B;
     margin: 18px 0;
 }
@@ -310,11 +335,11 @@ h5 {
 .tabs {
     display: flex;
     flex-direction: column;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     max-width: 1170px;
     width: 100%;
     margin: auto;
-    padding: 100px 15px 0px;
+    padding: 100px 0px 0px;
 }
 
 .tabs .header {
@@ -326,11 +351,9 @@ h5 {
 
 .tabs .header span {
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 14px; 
     font-style: normal;
     font-weight: 400;
-    max-width: 183px;
-    width: 100%;
     padding: 10px;
 }
 
@@ -339,18 +362,17 @@ h5 {
     border: 1px solid #C6CBCD;
     border-bottom: 1px solid white;
     border-radius: 5px 5px 0 0;
-    max-width: 201px;
-    width: 100%;
+    width: 18%;
 }
 
 .tabs .header .tab_2, .tab_3 {
     cursor: pointer;
+    width: 16%;
     border-bottom: 1px solid #C6CBCD;
 }
 
 .tabs .header .tab_4 {
-    max-width: 603px;
-    width: 100%;
+    width: 50%;
     border-bottom: 1px solid #C6CBCD;
 }
 
@@ -358,35 +380,23 @@ h5 {
     display: flex;
     border: 1px solid #C6CBCD;
     border-top: none;
-    
+    max-height: 500px;
 }
 
 .tabs .text_1 {
-    
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    margin-left: 100px;
-    margin-bottom: 20px;
-}
-
-.tabs h3 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-}
-
-.tabs h5 {
-    font-family: "Raleway";
-    font-style: normal;
+    padding: 0 30px 20px 6.25rem;
 }
 
 .tabs .button_1 {
     background-color: #EC7979;
     border: none;
     color: white;
+    font-family: "Open Sans", sans-serif;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 18px; 
     max-width: 270px;
     width: 100%;
     height: 58px;
@@ -405,9 +415,9 @@ h5 {
 }
 
 .tabs #right {
-    margin-left: 30px;
-    width: 470px;
-    height: 500px;
+    width: 29.375rem;
+    max-width: 100%;
+    height: auto;
 }
 /* конец tabs */
 
@@ -426,14 +436,12 @@ h5 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     text-align: center;
     max-width: 1170px;
     width: 100%;
-    padding: 0 15px;
-    margin-top: 55px;
-    margin-bottom: 55px;
+    padding: 55px 0;
 }
 
 .about header {
@@ -445,12 +453,6 @@ h5 {
 
 }
 
-.about header div{
-    border: 1px solid #EC7979;
-    width: 170px;
-    margin: auto;
-}
-
 .about header h5 {
     color: #86878B;
     padding: 0;
@@ -458,15 +460,16 @@ h5 {
     margin-bottom: 71px;
 }
 
-.about section {
+.about .about_container_box {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-end;
+    gap: 30px;
 }
 
-.about [class^="box"] {
+.about .box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -475,8 +478,8 @@ h5 {
 }
 
 .about img {
-    width: 170px;
-    height: 170px;
+    max-width: 170px;
+    max-height: 170px;
 }
 
 .about h4 {
@@ -499,12 +502,12 @@ h5 {
 
 .price {
     background: #F5F5F5;
-    padding:  50px 0 ;
+    padding: 50px 0;
     width: 100%;
 }
 
 .price .container {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     display: flex;
     flex-direction: column;
     font-style: normal;
@@ -512,13 +515,7 @@ h5 {
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
-}
-
-.price header div{
-    border: 1px solid #EC7979;
-    width: 170px;
-    margin: auto;
+    /* padding: 0 15px; */
 }
 
 .price header h5 {
@@ -528,25 +525,24 @@ h5 {
     margin-bottom: 80px;
 }
 
-.price section {
+.price .container_box {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: wrap;
+    gap: 30px;
 }
 
-.price [class^="box"] {
+.price .box {
     background: #FFFFFF;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 370px;
+    max-width: 370px;
+    width: 100%;
     height: 510px;
     cursor: pointer;
 }
 
-.price [class^="box"]:hover {
+.price .box:hover {
     transform: translate(0px, -20px);
     transition: 0.8s;
     box-shadow: 0px 4px 10px 0px rgba(51, 51, 51, 0.2);
@@ -561,7 +557,7 @@ h5 {
     height: 48px;
 }
 
-.price section .back_black {
+.price .back_black {
     background: #333333;
 }
 
@@ -572,7 +568,6 @@ h5 {
     height: 60px;
     background: #333333;
     color: #FFFFFF;
-    
 }
 
 .price h3 {
@@ -580,7 +575,6 @@ h5 {
     justify-content: center;
     align-items: center;
     font-size: 36px;
-    font-weight: 700;
     height: 98px;
     background: #333333;
     color: #FFFFFF;
@@ -600,21 +594,13 @@ h5 {
 .reviews {
     display: flex;
     flex-direction: column;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     text-align: center;
     max-width: 1170px;
     width: 100%;
-    margin: auto;
-    padding: 0 15px;
-    margin-top: 55px;
-    margin-bottom: 55px;
-}
-
-.reviews header div{
-    border: 1px solid #EC7979;
-    width: 170px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 55px 0;
 }
 
 .reviews header h5 {
@@ -624,67 +610,62 @@ h5 {
     margin-bottom: 71px;
 }
 
-.reviews section {
+.reviews .reviews_container_text {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 30px;
 }
 
 .reviews article {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 370px;
-    height: 336px;
+    max-width: 370px;
+    width: 100%;
 }
 
 .reviews .text_1 {
     display: flex;
-    align-items: center;
-    height: 180px;
-    font-size: 18px;
+    position: relative;
     padding: 35px 20px;
-    margin-bottom: 60px;
+    margin-bottom: 66px;
     background-color: #E2E2E2;
     border-radius: 10px 10px;
     color: #86878B;
-
 }
 
-.reviews .delta {
+.reviews .text_1::before {/*треугольник под отзывом*/
+    content: "";
     position: absolute;
-    top: 177px;
-    left: 70px;
+    left: 19%;
+    top: 100%;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-top: 20px solid #E2E2E2;
 }
 
-.reviews article .text_2, .text_3 {
+.commend_text_main {
     display: flex;
-    margin: 0;
-    justify-content: flex-start;
+    gap: 30px;
 }
 
-.reviews article .text_2 {
-    padding: 15px 0 15px 100px;
-}
-
-.reviews .text_3 {
-    margin-top: 15px;
-    padding-left: 100px;
+.user_avatar {
+    display: flex;
+    max-width: 70px;
 }
 
 .reviews img {
-    position: absolute;
-    top: 73%;
     width: 70px;
     height: 70px;
 }
 
-.reviews h4 {
-    margin: 30px 0;
+.user_name_work {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+.text_2 {
+    padding: 15px 0;
 }
 /* конец reviews */
 
@@ -699,6 +680,7 @@ h5 {
 
 /* начало bunner_2 */
 .bunner_2 {
+    background: url(../images/bunner_2/bg_bunner_2.png) no-repeat center center;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -716,7 +698,7 @@ h5 {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: .4;
+    opacity: .5;
     z-index: -1;
     background: #000000;
 }
@@ -724,7 +706,7 @@ h5 {
 .bunner_2 .container {
     position: relative;
     z-index: 1;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     padding: 50px 0px;
     text-align: center;
@@ -734,9 +716,9 @@ h5 {
     color: #FFFFFF;
 }
 
-.bunner_2 header div{
-    border: 1px solid;
-    width: 170px;
+.bunner_2 header div{ /*полоса под заголовом*/
+    border: 1px solid white;
+    width: calc(21% - 4px);
     margin: auto;
 }
 
@@ -750,6 +732,7 @@ h5 {
     border: 2px solid #FFFFFF;
     background:rgba(51, 51, 51, 0);
     color: white;
+    font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-size: 18px;
     max-width: 370px;
@@ -784,21 +767,13 @@ h5 {
 
 /* начало contact */
 .contact {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     text-align: center;
     max-width: 1170px;
     width: 100%;
-    margin: auto;
-    padding: 0 15px;
-    margin-top: 55px;
-    margin-bottom: 55px;
-}
-
-.contact header div{
-    border: 1px solid #EC7979;
-    width: 170px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 55px 0;
 }
 
 .contact header h5 {
@@ -808,25 +783,24 @@ h5 {
     margin-bottom: 54px;
 }
 
-.contact section {
+.contact .container_for_input {
     width: 100%;
-    flex-wrap: wrap;
+    gap: 30px;
     display: flex;
     justify-content: space-between;
 }
 
-.contact article {
+.contact .box {
     width: 50%;
 }
 
 .contact .block_left {
     display: flex;
     box-sizing: border-box;
-    max-width: 571px;
     width: 100%;
     border: none;
     padding: 15px 0px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     color: #BDBDBD;
     border-bottom: 1px solid #BDBDBD;
     height: 50px;
@@ -834,30 +808,39 @@ h5 {
     font-size: 14px;
 }
 
+.contact .block_left:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
 ::placeholder {
     color: #BDBDBD;
 }
 
-.contact #block_right {
+.contact .block_right {
     resize: none;
     margin-top: 35px;
     display: flex;
     box-sizing: border-box;
-    max-width: 569px;
     width: 100%;
     border: none;
     padding: 15px 0px;
-    font-family: "Open Sans";
-    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px; 
     color: #BDBDBD;
     border-bottom: 1px solid #BDBDBD;
     height: 220px;
 }
 
+.contact .block_right:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
 .button_3 {
     background-color: #EC7979;
     border: none;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     color: white;
     font-weight: 600;
     font-size: 18px;
@@ -887,29 +870,30 @@ h5 {
 
 
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: #000000;
-    text-align: center;
     width: 100%;
+    height: 164px;
 }
 
-footer section {
+footer .footer_icons {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 565px;
     width: 100%;
-    justify-content: center;
-    
 }
 
 footer h5 {
     color: #FFFFFF80;
-    padding-bottom: 27px;
-    margin-bottom: 0;
 }
 
 footer img {
    width: 53px;
    height: 53px;
-   padding: 35px 30px 28px;
 }
 
 footer img:hover {
@@ -921,3 +905,339 @@ footer img:active {
     transform: scale(1.5);
 }
 
+
+
+
+
+
+
+
+
+@media only screen and (max-device-width: 1025px) {
+    :root {
+        font-size: 12px;
+    }
+
+
+
+
+
+    .bunner_1 {
+        height: auto;
+    }
+    .bunner_1 .header {
+        padding: 0;
+    }
+    .bunner_1 .container {
+        padding: 212px 20px 106px 115px;
+    }
+    .bunner_1 .box_1 {
+        max-width: 450px;
+    }
+    #form_bunner {
+        max-width: 398px;
+    }
+    .bunner_1 h5 {
+        max-width: 183px;
+    }
+
+
+
+
+
+    .social {
+        padding: 0 16px;
+    }
+    .social img {
+        width: 64px;
+        height: 64px;
+    }
+
+
+
+
+
+    .tabs {
+        padding: 100px 16px 0;
+        max-width: 992px;
+        width: 90%;
+    }
+
+
+
+
+
+    .about {
+        max-width: 992px;
+    }
+    .about .about_container_box {
+        gap: 20px;
+    }
+    .about .box {
+        max-width: 317px;
+    }
+    .about img {
+        max-width: 147px;
+        max-height: 147px;
+    }
+
+
+
+
+
+    .price {
+        max-width: 992px;
+    }
+    .price .container_box {
+        gap: 20px;
+    }
+    .price .box {
+        max-width: 317px;
+    }
+
+
+
+
+
+    .reviews {
+        max-width: 992px;
+    }
+    .reviews .reviews_container_text {
+        gap: 20px;
+    }
+    .reviews .text_1 {
+        padding: 4.2rem 1.7rem;
+    }
+
+
+
+
+
+    .contact {
+        max-width: 992px;
+    }
+    
+
+
+
+
+    footer img {
+        width: 45px;
+        height: 45px;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-device-width: 769px) {
+    
+    h2 {
+        font-size: 24px;
+    }
+    .line_under_heading {
+        width: calc(50% - 10px);
+    }
+
+
+
+
+    .bunner_1 .container {
+        display: flex;
+        box-sizing: border-box;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 140px 16px 50px;
+        gap: 55px;
+    }
+    #form_bunner {
+        max-width: 450px;
+    }
+    .bunner_1 .heading_for_form_bunner {
+        font-size: 14px;
+        padding: 35px;
+    }
+    .bunner_1 nav {
+        display: none;
+    }
+    .bunner_1 .logo_1 {
+        display: none;
+    }
+    .bunner_1 .box_1 {
+        align-items: center;
+        height: 378px;
+    }
+    .bunner_1 .line {
+        width: calc(50% - 10px);
+    }
+    .bunner_1 .fieldset {
+        height: 381px;
+        justify-content: flex-end;
+        padding: 0 ;
+    }
+    .input_bunner1 {
+        margin-bottom: 51px;
+    }
+    .bunner_1 h5 {
+        max-width: 450px;
+    }
+    .bunner_1 .button {
+        max-width: 450px;
+        width: 100%;
+    }
+
+
+
+
+
+    .social {
+        box-sizing: border-box;
+        text-align: center;
+        flex-wrap: wrap;
+        padding: 25px 16px;
+    }
+    .social .container {
+        padding: 0;
+    }
+    .social img {
+        width: 26px;
+        height: 26px;
+        padding: 20px 0;
+    }
+
+
+
+
+
+    .tabs {
+        padding: 41px 16px 0;
+    }
+    .tabs h5 {
+        margin: 50px 0 29px;
+    }
+    .tabs #right {
+        display: none;
+    }
+    .tabs .header .tab_1 {
+        width: 100%;
+    }
+    .tabs .header .tab_2, .tab_3 {
+        width: 100%;
+    }
+    .tabs .header .tab_4 {
+        display: none;
+    }
+    .tabs .text_1 {
+        padding: 30px 25px;
+        align-items: center;
+        text-align: center;
+    }
+    .tabs .button_1 {
+        max-width: 450px;
+    }
+
+
+
+
+
+    .about {
+        box-sizing: border-box;
+        padding: 0 16px 60px;
+    }
+    .about h2 {
+        font-size: 18px;
+    }
+    .about .about_container_box {
+        justify-content: center;
+    }
+
+
+
+
+
+    .price {
+        box-sizing: border-box;
+        padding: 0 16px 26px;
+    }
+    .price .container_box {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .price h3 {
+        font-size: 24px;
+    }
+
+
+
+
+
+    .reviews {
+        box-sizing: border-box;
+        padding: 0 16px 30px;
+    }
+    .reviews .reviews_container_text {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .reviews .commend_1 {
+        display: none;
+    }
+    .reviews .commend_3 {
+        display: none;
+    }
+
+
+
+
+
+    .bunner_2 .container {
+        padding: 0 16px 58px;
+    }
+    .bunner_2 header div{ /*полоса под заголовом*/
+        border: 1px solid white;
+        width: calc(50% - 10px);
+        margin: auto;
+    }
+
+
+
+
+
+    .contact {
+        box-sizing: border-box;
+        padding: 0 16px 40px;
+        max-width: 480px;
+        width: 100%;
+    }
+    .contact .container_for_input {
+        display: block;
+    }
+    .contact .box {
+        width: auto;
+    }
+
+
+
+
+
+
+    footer {
+        box-sizing: border-box;
+        padding: 0 16px;
+    }
+    footer img {
+        width: 26px;
+        height: 26px;
+    }
+}
+    
+    
+
+    
