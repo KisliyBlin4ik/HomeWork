@@ -4,35 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figma</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style/style.css">
+    <title>Figma</title>
 </head>
 <body>
     <div class="wrapper">
         <header class="header_bunner">
             <section class="bunner_1">
-                <div class="header">
-                    <div class="logo_2">
-                        <img src="images/bunner_1/logo_ax_2.png" alt="blablabla">
-                        <img src="images/bunner_1/logo_ax_1.png" alt="blablabla">
-                    </div>
-                    <nav>
-                        <a href="#tabs" >Features</a>
-                        <a href="#about" >About</a>
-                        <a href="#price" >Pricing</a>
-                        <a href="#reviews" >Reviews</a>
-                        <a href="#contact" >Contact</a>
-                    </nav>
-                </div>
-
                 <div class="container">
-                    <section class="box_1">
+                    <div class="header__body">
+                        <a href="#" class="header__logo_2">
+                            <img class="logo_AX_2" src="images/bunner_1/logo_ax_2.png" alt="blablabla">
+                            <img class="logo_IT_2" src="images/bunner_1/logo_ax_1.png" alt="blablabla">
+                        </a>
+                        <div class="header__burger"><!--кнопка бургер-->
+                            <span></span>
+                        </div>
+                        <nav class="header__menu">
+                            <ul class="header__list">
+                                <li>
+                                    <a href="#tabs" class="header__link">Features</a>
+                                </li>
+                                <li>
+                                    <a href="#about" class="header__link">About</a>
+                                </li>
+                                <li>
+                                    <a href="#price" class="header__link">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="#reviews" class="header__link">Reviews</a>
+                                </li>
+                                <li>
+                                    <a href="#contact" class="header__link">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                
+
+                <div class="content">
+                    <section class="content__box">
                         <div class="logo_1">
-                            <img src="images/bunner_1/logo_AX.png" alt="blablabla">
-                            <img src="images/bunner_1/logo_IT.png" alt="blablabla">
+                            <img class="logo_AX" src="images/bunner_1/logo_AX.png" alt="blablabla">
+                            <img class="logo_IT" src="images/bunner_1/logo_IT.png" alt="blablabla">
                         </div>
                         <h1>MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
                         <div class="line"></div><!--полоса под заголовом-->
@@ -185,7 +205,7 @@
                     <div class="line_under_heading"></div><!--полоса под заголовом-->
                     <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
                 </header>
-                <div class="reviews_container_text">
+                <div class="reviews_container_text reviews_1">
                     <article class="commend">
                         <div class="commend_text_header">
                             <h5 class="text_1"><!--треугольник под отзывом-->
@@ -198,7 +218,7 @@
                         </div>
                         <div class="commend_text_main">
                             <div class="user_avatar">
-                                <img src="images/reviews/Ellipse_avatar_1.png" alt="blablabla">
+                                <img src="images/reviews/ellipse_avatar_1.png" alt="blablabla">
                             </div>
                             <div class="user_name_work">
                                 <h4 class="text_2">Davis Rhiel Madsen</h4>
@@ -218,7 +238,7 @@
                         </div>
                         <div class="commend_text_main">
                             <div class="user_avatar">
-                                <img src="images/reviews/Ellipse_avatar_2.png" alt="blablabla">
+                                <img src="images/reviews/ellipse_avatar_2.png" alt="blablabla">
                             </div>
                             <div class="user_name_work">
                                 <h4 class="text_2">Jaydon Rosser</h4>
@@ -238,7 +258,7 @@
                         </div>
                         <div class="commend_text_main">
                             <div class="user_avatar">
-                                <img src="images/reviews/Ellipse_avatar_3.png" alt="blablabla">
+                                <img src="images/reviews/ellipse_avatar_3.png" alt="blablabla">
                             </div>
                             <div class="user_name_work">
                                 <h4 class="text_2">Cooper Dorwart</h4>
@@ -246,6 +266,83 @@
                             </div>
                         </div>
                     </article>
+                </div>
+                
+                <div class="reviews_container_text reviews_2">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <article class="swiper-slide">
+                                <div class="commend">
+                                    <div class="commend_text_header">
+                                        <h5 class="text_1"><!--треугольник под отзывом-->
+                                            Lorem ipsum dolor sit amet, 
+                                            consectetur adipisicing elit. Doloribus 
+                                            accusamus expedita repellat similique 
+                                            odio aspernatur ex, architecto eaque 
+                                            quo suscipit.
+                                        </h5>
+                                    </div>
+                                    <div class="commend_text_main">
+                                        <div class="user_avatar">
+                                            <img src="images/reviews/ellipse_avatar_1.png" alt="blablabla">
+                                        </div>
+                                        <div class="user_name_work">
+                                            <h4 class="text_2">Davis Rhiel Madsen</h4>
+                                            <h5 class="text_3">Manager</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="swiper-slide">
+                                <div class="commend">
+                                    <div class="commend_text_header">
+                                        <h5 class="text_1"><!--треугольник под отзывом-->
+                                            Lorem ipsum dolor sit amet, 
+                                            consectetur adipisicing elit. Doloribus 
+                                            accusamus expedita repellat similique 
+                                            odio aspernatur ex, architecto eaque 
+                                            quo suscipit.
+                                        </h5>
+                                    </div>
+                                    <div class="commend_text_main">
+                                        <div class="user_avatar">
+                                            <img src="images/reviews/ellipse_avatar_2.png" alt="blablabla">
+                                        </div>
+                                        <div class="user_name_work">
+                                            <h4 class="text_2">Jaydon Rosser</h4>
+                                            <h5 class="text_3">Manager</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </article>
+                            <article class="swiper-slide">
+                                <div class="commend">
+                                    <div class="commend_text_header">
+                                        <h5 class="text_1"><!--треугольник под отзывом-->
+                                            Lorem ipsum dolor sit amet, 
+                                            consectetur adipisicing elit. Doloribus 
+                                            accusamus expedita repellat similique 
+                                            odio aspernatur ex, architecto eaque 
+                                            quo suscipit.
+                                        </h5>
+                                    </div>
+                                    <div class="commend_text_main">
+                                        <div class="user_avatar">
+                                            <img src="images/reviews/ellipse_avatar_3.png" alt="blablabla">
+                                        </div>
+                                        <div class="user_name_work">
+                                            <h4 class="text_2">Cooper Dorwart</h4>
+                                            <h5 class="text_3">Manager</h5> 
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </article>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    
                 </div>
             </div>
         
@@ -301,5 +398,9 @@
             </article>
         </footer>
     </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

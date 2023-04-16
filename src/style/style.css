@@ -3,19 +3,6 @@
     margin: 0;
 }
 
-.wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 h1 {
     font-size: 3rem; /*48px*/
     font-family: "Raleway", sans-serif;
@@ -46,6 +33,22 @@ h5 {
     font-weight: 400;
 }
 
+
+
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .line_under_heading{/*полоса под заголовом*/
     border: 1px solid #EC7979;
     width: calc(15% - 5px);
@@ -62,37 +65,167 @@ h5 {
 /* начало bunner_1 */
 
 /* nav */
-.bunner_1 .header {
+.bunner_1 .container {
     background: #000000;
-    position: absolute;
+    position: fixed;
+    z-index: 50;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     box-sizing: border-box;
-    padding: 0px 170px 0 115px;
     width: 100%;
 }
+.bunner_1 .container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: 2;
+}
 
-.bunner_1 .logo_2 {
+.bunner_1 .header__body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 170px 0 115px;
+    width: 100%;
+    height: 75px;
+}
+
+.bunner_1 .header__logo_2 {
     display: flex;
     padding: 23px 0;
     flex-wrap: nowrap;
+    position: relative;
+    z-index: 3;
+}
+.logo_AX_2 {
+    width: 52px;
+    height: 30px;
+}
+.logo_IT_2 {
+    width: 32px;
+    height: 30px;
 }
 
-.bunner_1 nav {
+.header__burger {
+    display: none;
+}
+
+.bunner_1 .header__menu {
     display: flex;
+    position: relative;
+    z-index: 2;
     width: 570px;
     justify-content: space-evenly;
 }
 
-.bunner_1 a {
+.bunner_1 .header__list {
+    display: flex;
+}
+.bunner_1 .header__list li{
+    list-style: none;
+}
+
+.bunner_1 .header__link {
     text-decoration: none;
     color: white;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
-    padding: 2.28em;
+    padding: 2em;
     color: #FFFFFF;
+    text-decoration: none;
+    color: white;
 }
+
+@media only screen and (max-device-width: 769px) {/* задать медиа для работы бургера только в мобилниках*/
+
+    .bunner_1 .container:before {
+        z-index: 3;
+    }
+    .bunner_1 .header__body {
+        height: 56px;
+    }
+    .bunner_1 .logo_AX_2{
+        width: 38px;
+        height: 22px;
+    }
+    .bunner_1 .logo_IT_2{
+        width: 24px;
+        height: 22px;
+    }
+
+    .bunner_1 .header__burger {/*кнопка бургера- размеры*/
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+    }
+    .bunner_1 .header__burger span {/*кнопка бургера- полоска центр*/
+        position: absolute;
+        background-color: white;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: 0.3s;
+    }
+    .bunner_1 .header__burger:before,
+    .bunner_1 .header__burger:after {/*кнопка бургера*/
+        content: '';;
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: 0.3s;
+    }
+    .bunner_1 .header__burger:before {/*кнопка бургера-полоска вверху*/
+        top: 0;
+    }
+    .bunner_1 .header__burger:after {/*кнопка бургера-полоска снизу*/
+        bottom: 0;
+    }
+    .header__burger.active span {/*кнопка бургера-центральная полоса проподает*/
+        transform: scale(0);
+    }
+    .header__burger.active:before {/*кнопка бургера-крестик*/
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header__burger.active:after {/*кнопка бургера-крестик*/
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .bunner_1 .header__menu {/*всплываюзее меню бургера*/
+        position: fixed;
+        top: -100%;/*меню находится сверху за дисплеем*/
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: #000000;
+        padding: 56px 0 0 0;
+        transition: 0.3s;
+    }
+    .bunner_1 .header__menu.active {/*меню на экране при активации бургера(active)*/
+        top: 0;
+    }
+
+    .bunner_1 .header__link {/*кнопки ссылок*/
+        display: flex;
+        justify-content: center;
+    }
+    .bunner_1 .header__list {
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+}
+
 /* nav end */
 
 
@@ -121,7 +254,7 @@ h5 {
     background: #000000;
 }
 
-.bunner_1 .container {
+.bunner_1 .content {
     display: flex;
     max-width: 1170px;
     width: 100%;
@@ -129,13 +262,9 @@ h5 {
     padding: 280px 16px 185px;
 }
 
-.bunner_1 a {
-    text-decoration: none;
-    color: white;
-}
 
 /* начало - box_1 - левая часть */
-.bunner_1 .box_1 {
+.bunner_1 .content__box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -147,6 +276,16 @@ h5 {
     display: flex;
     padding: 23px 0;
     flex-wrap: nowrap;
+}
+
+.bunner_1 .logo_AX {
+    width: 102px;
+    height: 55px;
+}
+
+.bunner_1 .logo_IT {
+    width: 63px;
+    height: 55px;
 }
 
 .bunner_1 .line {/*полоса под заголовом*/
@@ -461,9 +600,7 @@ h5 {
 }
 
 .about .about_container_box {
-    width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
     gap: 30px;
@@ -527,6 +664,7 @@ h5 {
 
 .price .container_box {
     display: flex;
+    justify-content: center;
     gap: 30px;
 }
 
@@ -607,15 +745,17 @@ h5 {
     color: #86878B;
     padding: 0;
     margin-top: 40px;
-    margin-bottom: 71px;
+    margin-bottom: 83px;
 }
 
 .reviews .reviews_container_text {
     display: flex;
+    justify-content: center;
+    min-width: 0;
     gap: 30px;
 }
 
-.reviews article {
+.reviews .commend {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -666,6 +806,10 @@ h5 {
 }
 .text_2 {
     padding: 15px 0;
+    max-height: 24px;
+}
+.reviews .reviews_2 {
+    display: none;
 }
 /* конец reviews */
 
@@ -680,14 +824,13 @@ h5 {
 
 /* начало bunner_2 */
 .bunner_2 {
-    background: url(../images/bunner_2/bg_bunner_2.png) no-repeat center center;
+    background: url(../images/bunner_2/bg_bunner_2.png) no-repeat center;
     width: 100%;
     display: flex;
     justify-content: center;
     margin:  0 auto;
-    background-repeat: no-repeat;
     position: relative;
-    z-index: 1;
+    z-index: 0;
     background-size: cover;
 }
 
@@ -791,7 +934,7 @@ h5 {
 }
 
 .contact .box {
-    width: 50%;
+    width: 100%;
 }
 
 .contact .block_left {
@@ -875,8 +1018,10 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     background-color: #000000;
+    box-sizing: border-box;
     width: 100%;
     height: 164px;
+    padding: 0 16px;
 }
 
 footer .footer_icons {
@@ -913,7 +1058,7 @@ footer img:active {
 
 
 
-@media only screen and (max-device-width: 1025px) {
+@media only screen and (max-device-width: 1201px) {
     :root {
         font-size: 12px;
     }
@@ -925,14 +1070,22 @@ footer img:active {
     .bunner_1 {
         height: auto;
     }
-    .bunner_1 .header {
+    .bunner_1 .header__body {
         padding: 0;
     }
-    .bunner_1 .container {
+    .bunner_1 .content {
         padding: 212px 20px 106px 115px;
     }
-    .bunner_1 .box_1 {
+    .bunner_1 .content__box {
         max-width: 450px;
+    }
+    .bunner_1 .logo_AX {
+        width: 69px;
+        height: 41px;
+    }
+    .bunner_1 .logo_IT {
+        width: 42px;
+        height: 41px;
     }
     #form_bunner {
         max-width: 398px;
@@ -959,8 +1112,8 @@ footer img:active {
 
     .tabs {
         padding: 100px 16px 0;
-        max-width: 992px;
-        width: 90%;
+        margin: 0;
+        box-sizing: border-box;
     }
 
 
@@ -968,7 +1121,8 @@ footer img:active {
 
 
     .about {
-        max-width: 992px;
+        box-sizing: border-box;
+        padding: 55px 16px;
     }
     .about .about_container_box {
         gap: 20px;
@@ -986,7 +1140,8 @@ footer img:active {
 
 
     .price {
-        max-width: 992px;
+        box-sizing: border-box;
+        padding: 55px 16px;
     }
     .price .container_box {
         gap: 20px;
@@ -1000,13 +1155,43 @@ footer img:active {
 
 
     .reviews {
-        max-width: 992px;
+        box-sizing: border-box;
+        padding: 55px 16px;
+    }
+    .reviews header h5 {
+        margin-bottom: 32px;
     }
     .reviews .reviews_container_text {
-        gap: 20px;
+        gap: 19px;
+    }
+    .reviews .reviews_container_text .commend {
+        max-width: 319px;
+        margin: 0 auto;
     }
     .reviews .text_1 {
         padding: 4.2rem 1.7rem;
+    }
+    .commend_text_main {
+        gap: 20px;
+    }
+    .reviews img {
+        width: 64px;
+        height: 64px;
+    }
+    .swiper {
+        height: 360px;
+        z-index: 0;
+    }
+    .swiper-pagination-bullet {
+        background-color: white;
+        border: 1px solid #86878b;
+        opacity: 1;
+        
+        width: 9px;
+        height: 9px;
+    }
+    .swiper-pagination-bullet-active {
+        background: #86878b; 
     }
 
 
@@ -1014,7 +1199,8 @@ footer img:active {
 
 
     .contact {
-        max-width: 992px;
+        box-sizing: border-box;
+        padding: 55px 16px;
     }
     
 
@@ -1047,7 +1233,11 @@ footer img:active {
 
 
 
-    .bunner_1 .container {
+    .bunner_1 .header__body {
+        padding: 0 35px 0 20px;
+        justify-content: space-between;
+    }
+    .bunner_1 .content {
         display: flex;
         box-sizing: border-box;
         justify-content: center;
@@ -1056,6 +1246,7 @@ footer img:active {
         padding: 140px 16px 50px;
         gap: 55px;
     }
+    
     #form_bunner {
         max-width: 450px;
     }
@@ -1063,13 +1254,10 @@ footer img:active {
         font-size: 14px;
         padding: 35px;
     }
-    .bunner_1 nav {
-        display: none;
-    }
     .bunner_1 .logo_1 {
         display: none;
     }
-    .bunner_1 .box_1 {
+    .bunner_1 .content__box {
         align-items: center;
         height: 378px;
     }
@@ -1154,6 +1342,7 @@ footer img:active {
         font-size: 18px;
     }
     .about .about_container_box {
+        flex-wrap: wrap;
         justify-content: center;
     }
 
@@ -1176,22 +1365,27 @@ footer img:active {
 
 
 
-
+    .reviews .reviews_1 {
+        display: none;
+    }
+    .reviews .reviews_2 {
+        display: flex;
+    }
+    .reviews header h5 {
+        margin-bottom: 24px;
+    }
+    .reviews img {
+        width: 57px;
+        height: 57px;
+    }
     .reviews {
         box-sizing: border-box;
         padding: 0 16px 30px;
     }
-    .reviews .reviews_container_text {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .reviews .commend_1 {
-        display: none;
-    }
-    .reviews .commend_3 {
-        display: none;
-    }
+    /* .swiper-pagination {
+    
+    } */
+
 
 
 
@@ -1214,13 +1408,9 @@ footer img:active {
         box-sizing: border-box;
         padding: 0 16px 40px;
         max-width: 480px;
-        width: 100%;
     }
     .contact .container_for_input {
-        display: block;
-    }
-    .contact .box {
-        width: auto;
+        flex-direction: column;
     }
 
 
@@ -1228,10 +1418,7 @@ footer img:active {
 
 
 
-    footer {
-        box-sizing: border-box;
-        padding: 0 16px;
-    }
+    
     footer img {
         width: 26px;
         height: 26px;
