@@ -1,44 +1,16 @@
+@import '_fonts';
+@import '_colors';
+
 * {
     margin: 0;
 }
 
-h1 {
-    font-size: 3rem; /*48px*/
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    color: #FFFFFF;
-}
-
-h2 {
-    font-size: 2.25rem;/*36px*/
-    font-weight: 400;
-    padding: 50px 0;
-}
-
-h3 {
-    font-weight: 700;
-    font-size: 1.875rem; /*30px*/
-}
-
-h4 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.5rem;/*24px*/
-    font-weight: 700;
-}
-
-h5 {
-    font-family: "Raleway", sans-serif;
-    font-size: 1.125rem;/*18px*/
-    font-weight: 400;
-}
-::placeholder {
-    color: #BDBDBD;
-}
 .line_under_heading{/*полоса под заголовом*/
-    border: 1px solid #EC7979;
+    border: 1px solid $button;
     width: calc(15% - 5px);
     margin: auto;
 }
+
 @media only screen and (max-width: 1201px) {
     :root {
         font-size: 12px;
@@ -57,6 +29,7 @@ h5 {
     width: 100%;
     display: flex;
     flex-direction: column;
+    /*------------------------------------------------------BUNNER-1------------------------------------------------------*/
     .bunner-1 {
         background: url(../images/bunner_1/bg_bunner_1.png) no-repeat center;
         width: 100%;
@@ -192,11 +165,11 @@ h5 {
                     cursor: pointer;
                     padding: 0; 
                     &:hover {
-                        border: 2px solid #EC7979;
-                        color: #EC7979;                    
+                        border: 2px solid $button;
+                        color: $button;                    
                     }   
                     &:active {
-                        background-color: #AB4949;
+                        background-color: $button-shaddow;
                         border: none;
                         color: white;                    
                     }             
@@ -220,7 +193,7 @@ h5 {
                     padding: 33px 0 0;                
                     .item-content__header-text {
                         .item-content__bold-text {
-                            color: #EC7979;
+                            color: $button;
                         }
                     }
                     .item-content__input {
@@ -246,7 +219,7 @@ h5 {
                         }
                     }
                     .item-content__button-5 {
-                        background-color: #EC7979;
+                        background-color: $button;
                         border: none;
                         font-family: "Open Sans", sans-serif;
                         color: white;
@@ -258,11 +231,11 @@ h5 {
                         padding: 0;
                         border-radius: 0 0 10px 10px;
                         &:hover {
-                            background-color: #AB4949;
+                            background-color: $button-shaddow;
                         }
                         &:active {
-                            background-color: #EC7979;
-                            box-shadow: 0px 0px 10px 0px #AB4949 inset;                        
+                            background-color: $button;
+                            box-shadow: 0px 0px 10px 0px $button-shaddow inset;                        
                         }
                     }
                 }
@@ -442,18 +415,19 @@ h5 {
         
     }
 
+    /*------------------------------------------------------MAIN------------------------------------------------------*/
     main {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     
-        
+        /*------------------------------------------------------SOCIAL------------------------------------------------------*/
         .social {
             display: flex;
             justify-content: center;
             margin: 0 auto;
-            background: #F8EFEF;
+            background: $socialBg; 
             box-sizing: border-box;
             width: 100%;        
             .container {
@@ -465,7 +439,7 @@ h5 {
                     padding: 14px 0;
                 }  
                 h5{
-                    color: #86878B;
+                    color: $alternativeColorH5; 
                     margin: 18px 0;                
                 }        
             }
@@ -519,7 +493,7 @@ h5 {
             }
         }
             
-            
+        /*------------------------------------------------------TABS------------------------------------------------------*/
         .tabs {
             display: flex;
             flex-direction: column;
@@ -568,7 +542,7 @@ h5 {
                     flex-direction: column;
                     padding: 0 30px 20px 6.25rem;                
                     .button-1 {
-                        background-color: #EC7979;
+                        background-color: $button;
                         border: none;
                         color: white;
                         font-family: "Open Sans", sans-serif;
@@ -580,11 +554,11 @@ h5 {
                         cursor: pointer;
                         padding: 0;
                         &:hover {
-                            background-color: #AB4949;
+                            background-color: $button-shaddow;
                         }   
                         &:active {
-                            background-color: #EC7979;
-                            box-shadow: 0px 0px 10px 0px #AB4949 inset;                        
+                            background-color: $button;
+                            box-shadow: 0px 0px 10px 0px $button-shaddow inset;                        
                         }                
                     }
                 }
@@ -635,6 +609,8 @@ h5 {
                 }
             }
         }
+
+        /*------------------------------------------------------ABOUT------------------------------------------------------*/
         .about {
             display: flex;
             flex-direction: column;
@@ -652,7 +628,7 @@ h5 {
                 flex-direction: column;
                 flex-wrap: wrap;   
                 h5 {
-                    color: #86878B;
+                    color: $alternativeColorH5;
                     padding: 0;
                     margin-top: 40px;
                     margin-bottom: 71px;                
@@ -708,6 +684,8 @@ h5 {
                 }
             } 
         }
+
+        /*------------------------------------------------------PRICE------------------------------------------------------*/
         .price {
             background: #F5F5F5;
             padding: 50px 0;
@@ -734,7 +712,7 @@ h5 {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                color: #86878B;
+                color: $alternativeColorH5;
                 border-top: 2px solid #F5F5F5;
                 height: 48px;            
             }      
@@ -749,7 +727,7 @@ h5 {
                 margin: 0 auto;            
                 header {
                     h5 {
-                        color: #86878B;
+                        color: $alternativeColorH5;
                         padding: 0;
                         margin-top: 40px;
                         margin-bottom: 80px;                    
@@ -816,6 +794,8 @@ h5 {
                 }
             }
         }
+
+        /*------------------------------------------------------REVIEWS------------------------------------------------------*/
         .reviews {
             display: flex;
             flex-direction: column;
@@ -828,7 +808,7 @@ h5 {
             padding: 55px 0;       
             header {
                 h5 {
-                    color: #86878B;
+                    color: $alternativeColorH5;
                     padding: 0;
                     margin-top: 40px;
                     margin-bottom: 83px;                
@@ -853,7 +833,7 @@ h5 {
                             margin-bottom: 66px;
                             background-color: #E2E2E2;
                             border-radius: 10px 10px;
-                            color: #86878B;
+                            color: $alternativeColorH5;
                             &::before {/*треугольник под отзывом*/
                                 content: "";
                                 position: absolute;
@@ -884,9 +864,6 @@ h5 {
                             .text-2 {
                                 padding: 15px 0;
                                 max-height: 24px;                            
-                            }
-                            .text-3 {
-
                             }
                         }
                     }
@@ -978,6 +955,8 @@ h5 {
                 
             }
         }
+
+        /*------------------------------------------------------BANNER-2------------------------------------------------------*/
         .bunner-2 {
             background: url(../images/bunner_2/bg_bunner_2.png) no-repeat center;
             width: 100%;
@@ -1031,11 +1010,11 @@ h5 {
                     cursor: pointer;
                     padding: 0; 
                     &:hover {
-                        border: 2px solid #EC7979;
-                        color: #EC7979;                    
+                        border: 2px solid $button;
+                        color: $button;                    
                     }
                     &:active {
-                        background-color: #AB4949;
+                        background-color: $button-shaddow;
                         border: none;
                         color: white;                    
                     }
@@ -1056,6 +1035,8 @@ h5 {
                 }
             }
         }
+
+        /*------------------------------------------------------CONTACT------------------------------------------------------*/
         .contact {
             font-family: "Raleway", sans-serif;
             font-style: normal;
@@ -1066,13 +1047,10 @@ h5 {
             padding: 55px 0;
             header {
                 h5 {
-                    color: #86878B;
+                    color: $alternativeColorH5;
                     padding: 0;
                     margin-top: 40px;
                     margin-bottom: 54px;                 
-                }
-                .line_under_heading {
-
                 }
             }
             .container_for_input {
@@ -1122,7 +1100,7 @@ h5 {
                 }
             }
             .button-3 {
-                background-color: #EC7979;
+                background-color: $button;
                 border: none;
                 font-family: "Open Sans", sans-serif;
                 color: white;
@@ -1135,11 +1113,11 @@ h5 {
                 padding: 0;
                 margin-top: 50px; 
                 &:hover {
-                    background-color: #AB4949;
+                    background-color: $button-shaddow;
                 }   
                 &:active {
-                    background-color: #EC7979;
-                    box-shadow: 0px 0px 10px 0px #AB4949 inset;                
+                    background-color: $button; 
+                    box-shadow: 0px 0px 10px 0px $button-shaddow inset;                
                 }        
             }
         }
@@ -1161,6 +1139,7 @@ h5 {
         }
     }
 
+    /*------------------------------------------------------FOOTER------------------------------------------------------*/
     footer {
         display: flex;
         flex-direction: column;
